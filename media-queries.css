@@ -1,0 +1,20 @@
+@media (max-width: 320px) {
+   .container {
+      padding: 24px;
+      border-radius: 4px;
+      max-width: 95%;
+   }
+
+   .option {
+      width: 25px;
+      height: 25px;
+      padding: 2px;
+      font-weight: 400;
+      font: size 12px;
+   }
+
+   .submit-btn {
+      width: 100%;
+      margin: 18px;
+   }
+}
