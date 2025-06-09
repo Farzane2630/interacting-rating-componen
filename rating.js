@@ -1,11 +1,12 @@
-let selectedValue = null;
-
 const options = document.querySelectorAll(".option");
+const ratingSection = document.getElementById("rating-state");
+const thankState = document.querySelector(".thank-you-state");
+const selectedRating = document.getElementById("selected-rating");
 
 options.forEach((option) => {
   option.addEventListener("click", () => {
     option.classList.add("selected");
-    selectedValue = option.value;
+    selectedRating.textContent = option.value;
   });
 });
 
@@ -14,14 +15,10 @@ const form = document.querySelector("form");
 form.addEventListener("submit", (e) => {
   e.preventDefault();
 
-  //   navigating to the thanks page!
-  if (selectedValue) {
-    alert(`selected value is ${selectedValue}`);
-
-    options.forEach((option) => {
-      option.classList.remove("selected");
-    });
-    selectedValue = null;
+  if (selectedRating.textContent) {
+    //  displaying thank you state
+    ratingSection.classList.add("display-none");
+    thankState.classList.add("display");
   } else {
     alert("you have to select a value!");
   }

@@ -25,31 +25,48 @@
     </style>
   </head>
   <body>
-    <div class="container">
-      <div class="icon-wrapper">
-        <img src="./assets/icon-star.svg" alt="star icon" />
-      </div>
+    <main class="container">
+      <section id="rating-state">
+        <div class="icon-wrapper">
+          <img src="./assets/icon-star.svg" alt="star icon" />
+        </div>
 
-      <header>
-        <h2>How did we do?</h2>
-      </header>
+        <strong class="title">How did we do?</strong>
 
         <p>
           Please let us know how we did with your support request. All feedback
           is appreciated to help us improve our offering!
         </p>
-      <form action="">
-        <div class="options">
-          <input class="option" type="button" id="value-1" value="1" />
-          <input class="option" type="button" id="value-2" value="2" />
-          <input class="option" type="button" id="value-3" value="3" />
-          <input class="option" type="button" id="value-4" value="4" />
-          <input class="option" type="button" id="value-5" value="5" />
-        </div>
 
-        <button type="submit" class="submit-btn" >SUBMIT</button>
-      </form>
-    </div>
+        <form action="">
+          <fieldset class="options">
+            <button class="option" type="button" value="1">1</button>
+            <button class="option" type="button" value="2">2</button>
+            <button class="option" type="button" value="3">3</button>
+            <button class="option" type="button" value="4">4</button>
+            <button class="option" type="button" value="5">5</button>
+          </fieldset>
+
+          <button type="submit" class="submit-btn">SUBMIT</button>
+        </form>
+      </section>
+
+      <!-- Thank you state -->
+      <section class="thank-you-state">
+        <div class="thanks-icon-wrapper">
+          <img src="./assets/illustration-thank-you.svg" alt="star icon" />
+        </div>
+        <div class="result">
+          <p>You selected <span id="selected-rating"></span> out of 5</p>
+        </div>
+        <strong class="title">Thank you!</strong>
+
+        <p>
+          We appreciate you taking the time to give a rating. If you ever need
+          more support, don’t hesitate to get in touch!
+        </p>
+      </section>
+    </main>
   </body>
 
   <script src="./rating.js"></script>

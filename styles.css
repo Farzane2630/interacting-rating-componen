@@ -36,6 +36,11 @@ h2 {
    margin-bottom: 36px;
 }
 
+.title {
+   font-size: 24px;
+   color: white;
+}
+
 form {
    display: flex;
    flex-direction: column;
@@ -48,6 +53,7 @@ form {
    display: flex;
    justify-content: space-around;
    align-items: center;
+   border: none;
 }
 
 .option {
@@ -84,4 +90,39 @@ form {
    margin: 36px;
    font-weight: 700;
    cursor: pointer;
+}
+
+.display-none {
+   display: none !important;
+}
+
+/* Thank you state styles */
+.display {
+   display: flex !important;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.thank-you-state {
+   display: none;
+}
+
+.thanks-icon-wrapper {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin: 36px auto;
+}
+
+.result {
+   background-color: hsl(213, 19%, 18%);
+   border-radius: 24px;
+   padding: 0 8px 0 8px;
+   text-align: center;
+   width: fit-content;
+   color: hsl(25, 97%, 53%);
+   font-weight: 400;
+   font-size: 14px;
+   margin-bottom: 24px;
 }
