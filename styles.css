@@ -19,13 +19,13 @@ body {
 }
 
 .container {
+   width: 320px;
+   height: fit-content;
    background-color: var(--primary-bg-dark-gray);
    padding: 2em;
    display: flex;
    flex-direction: column;
    border-radius: 10px;
-   max-width: 40%;
-   height: fit-content;
 }
 
 .icon-wrapper {
@@ -86,7 +86,7 @@ form {
    background-color: var(--primary-orange);
    color: var(--primary-bg-dark-gray);
    border-radius: 1em;
-   padding: 0.75em;
+   padding: 0.5em;
    /* 12px */
    text-align: center;
    border: none;
