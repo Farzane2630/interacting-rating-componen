@@ -4,10 +4,18 @@ const thankState = document.querySelector(".thank-you-state");
 const selectedRating = document.getElementById("selected-rating");
 
 options.forEach((option) => {
+  
   option.addEventListener("click", () => {
-    option.classList.add("selected");
+    options.forEach(option => {
+      if (option.className.includes("selected")) {
+      option.classList.remove("selected");  
+      } 
+    })
+    
     selectedRating.textContent = option.value;
-  });
+      option.classList.add("selected");
+    });
+    
 });
 
 const form = document.querySelector("form");
